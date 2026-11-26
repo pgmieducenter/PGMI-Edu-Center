@@ -1,25 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- JIKA VERIFIKASI GOOGLE ANDA MEMAKAI "HTML TAG", TEMPEL KODENYA DI BAWAH INI:
-<meta name="google-site-verification" content="ISI_KODE_ANDA" />
--->
-
-
 <title>PGMI EduCenter – Portal Digital PGMI UIN Mahmud Yunus Batusangkar</title>
-
 <meta name="description" content="PGMI EduCenter merupakan portal digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah (PGMI), UIN Mahmud Yunus Batusangkar. Temukan informasi profil, berita akademik, media pembelajaran, validasi modul ajar, dan layanan digital PGMI.">
-
 <link rel="canonical" href="https://pgmieducenter.github.io/PGMI-Edu-Center/">
-
 <meta name="keywords" content="PGMI EduCenter, PGMI UIN Mahmud Yunus Batusangkar, Portal Digital PGMI, Pendidikan Guru Madrasah Ibtidaiyah, Berita PGMI, Media Pembelajaran, Validasi Modul Ajar">
-
 <meta name="author" content="Program Studi PGMI FTIK UIN Mahmud Yunus Batusangkar">
-
 <meta name="robots" content="index, follow">
 <meta name="language" content="id">
 
@@ -29,2331 +18,385 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pgmieducenter.github.io/PGMI-Edu-Center/">
 <meta property="og:image" content="https://i.imgur.com/O5Zksfk.png">
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PGMI EduCenter – Portal Digital PGMI">
 <meta name="twitter:description" content="Portal digital Program Studi PGMI UIN Mahmud Yunus Batusangkar.">
 <meta name="twitter:image" content="https://i.imgur.com/O5Zksfk.png">
-
 <link rel="icon" href="https://i.imgur.com/O5Zksfk.png">
 
-<style>
+<meta name="google-site-verification" content="dsb0yb_Zb4_gjAI1Fkobfk87SrmyVQ3EGztbgdDqgRM" />
 
-/* =====================================================
-   PGMI EDUCENTER
-   PREMIUM NAVY BLUE + GOLD THEME
-===================================================== */
-
-:root{
-    --primary:#071D49;
-    --primary-light:#123F7A;
-    --secondary:#1B4F91;
-
-    --accent:#D4AF37;
-    --accent-light:#F5D77A;
-
-    --gold-soft:#E8C95A;
-    --gold-dark:#B89020;
-
-    --white:#ffffff;
-    --dark:#172033;
-    --text:#4B5563;
-
-    --background:#F6F8FC;
-}
-
-
-/* =====================================================
-   RESET
-===================================================== */
-
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-
-    font-family:'Poppins',sans-serif;
-
-}
-
-
-html{
-
-    scroll-behavior:smooth;
-
-}
-
-
-body{
-
-    background:var(--background);
-
-    overflow-x:hidden;
-
-    color:var(--dark);
-
-}
-
-
-/* =====================================================
-   NAVBAR — PREMIUM GOLD
-===================================================== */
-
-.navbar{
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    z-index:999;
-
-    background:
-        linear-gradient(
-            110deg,
-            #E8B923 0%,
-            #F6C936 25%,
-            #FFD84D 50%,
-            #F6C936 75%,
-            #E5B522 100%
-        );
-
-    box-shadow:
-        0 5px 25px rgba(7,29,73,.22);
-
-    border-bottom:
-        1px solid rgba(255,255,255,.45);
-}
-
-
-.nav-container{
-
-    max-width:1400px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:15px 30px;
-
-}
-
-
-.logo-area{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-
-.logo{
-
-    width:55px;
-
-}
-
-
-.logo-title{
-    font-size:22px;
-    font-weight:700;
-    color:var(--primary);
-}
-
-
-.logo-sub{
-    font-size:12px;
-    color:rgba(7,29,73,.72);
-}
-
-
-/* =====================================================
-   NAV MENU
-===================================================== */
-
-.nav-menu{
-
-    display:flex;
-
-    gap:30px;
-
-    list-style:none;
-
-}
-
-
-.nav-menu a{
-    position:relative;
-
-    text-decoration:none;
-
-    color:#071D49;
-
-    font-weight:600;
-
-    transition:.3s;
-}
-
-
-.nav-menu a::after{
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    bottom:-8px;
-
-    width:0;
-    height:3px;
-
-    background:#071D49;
-
-    border-radius:10px;
-
-    transition:.3s;
-}
-
-
-.nav-menu a:hover{
-
-    color:var(--accent-light);
-
-}
-
-
-.nav-menu a:hover{
-    color:#ffffff;
-}
-
-.nav-menu a:hover::after{
-    width:100%;
-}
-
-
-/* =====================================================
-   ADMIN AREA
-===================================================== */
-
-.admin-area{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-}
-
-
-.admin-btn{
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #174A91,
-            #071D49
-        );
-
-    color:#ffffff;
-
-    padding:10px 16px;
-
-    border-radius:12px;
-
-    border:1px solid rgba(255,255,255,.25);
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    white-space:nowrap;
-
-    transition:.3s;
-
-    box-shadow:
-        0 4px 12px rgba(7,29,73,.20);
-}
-
-
-.admin-btn:hover{
-    background:
-        linear-gradient(
-            135deg,
-            #071D49,
-            #174A91
-        );
-
-    color:#FFD84D;
-
-    transform:translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(7,29,73,.30);
-}
-
-    .navbar::after{
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    bottom:0;
-
-    width:100%;
-    height:3px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #071D49 0%,
-            #174A91 35%,
-            #D4AF37 60%,
-            #071D49 100%
-        );
-}
-
-/* =====================================================
-   HERO
-===================================================== */
-
-.hero{
-    min-height:100vh;
-
-    background:
-        linear-gradient(
-            110deg,
-            rgba(7,29,73,.97) 0%,
-            rgba(11,45,92,.88) 45%,
-            rgba(18,63,122,.65) 70%,
-            rgba(212,175,55,.28) 100%
-        ),
-        url("https://i.imgur.com/6JamZoo.jpeg");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-}
-
-
-/* efek cahaya lembut */
-
-.hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:
-        radial-gradient(
-            circle at 78% 45%,
-            rgba(212,175,55,.22),
-            transparent 32%
-        ),
-        linear-gradient(
-            90deg,
-            transparent 60%,
-            rgba(212,175,55,.08)
-        );
-
-    pointer-events:none;
-}
-
-
-.hero-content{
-
-    text-align:center;
-
-    color:white;
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:1000px;
-
-    padding:20px;
-
-}
-
-
-.hero-logo{
-
-    width:140px;
-
-    margin-bottom:20px;
-
-    filter:
-
-    drop-shadow(
-
-        0 8px 15px
-
-        rgba(0,0,0,.3)
-
-    );
-
-}
-
-
-.hero h1{
-
-    font-size:72px;
-
-    font-weight:800;
-
-    margin-bottom:15px;
-
-    letter-spacing:-2px;
-
-    text-shadow:
-
-    0 5px 25px rgba(0,0,0,.3);
-
-}
-
-
-.hero-text{
-
-    font-size:26px;
-
-    margin-bottom:15px;
-
-    color:rgba(255,255,255,.96);
-
-}
-
-
-.hero-campus{
-
-    font-size:18px;
-
-    color:var(--accent-light);
-
-    opacity:.95;
-
-}
-
-
-/* =====================================================
-   HERO BUTTONS
-===================================================== */
-
-.hero-buttons{
-
-    margin-top:40px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-}
-
-
-.btn-primary-custom,
-
-.btn-secondary-custom{
-
-    padding:15px 30px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-
-.btn-primary-custom{
-
-    background:
-
-    linear-gradient(
-
-        135deg,
-
-        var(--accent),
-
-        var(--accent-light)
-
-    );
-
-    color:var(--primary);
-
-    box-shadow:
-
-    0 8px 25px
-
-    rgba(0,0,0,.2);
-
-}
-
-
-.btn-primary-custom:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:
-
-    0 12px 30px
-
-    rgba(0,0,0,.35);
-
-}
-
-
-.btn-secondary-custom{
-
-    background:rgba(255,255,255,.95);
-
-    color:var(--primary);
-
-    box-shadow:
-
-    0 8px 25px
-
-    rgba(0,0,0,.15);
-
-}
-
-
-.btn-secondary-custom:hover{
-
-    background:var(--accent-light);
-
-    transform:translateY(-4px);
-
-}
-
-
-/* =====================================================
-   RUNNING TEXT
-===================================================== */
-
-.marquee-container{
-    background:
-        linear-gradient(
-            90deg,
-            var(--primary) 0%,
-            var(--primary-light) 55%,
-            #8C711E 100%
-        );
-
-    color:white;
-    overflow:hidden;
-    padding:12px;
-
-    border-top:1px solid rgba(255,255,255,.1);
-    border-bottom:1px solid rgba(255,255,255,.1);
-}
-
-
-.marquee{
-
-    white-space:nowrap;
-
-    display:inline-block;
-
-    animation:
-
-    marquee 25s linear infinite;
-
-}
-
-
-@keyframes marquee{
-
-    0%{
-
-        transform:translateX(100%);
-
-    }
-
-    100%{
-
-        transform:translateX(-100%);
-
-    }
-
-}
-
-
-/* =====================================================
-   SECTION
-===================================================== */
-
-.section{
-
-    padding:90px 20px;
-
-    max-width:1300px;
-
-    margin:auto;
-
-}
-
-
-.section-title{
-
-    text-align:center;
-
-    margin-bottom:50px;
-
-}
-
-
-.section-title h2{
-
-    font-size:42px;
-
-    color:var(--primary);
-
-    font-weight:700;
-
-}
-
-
-.section-title p{
-
-    color:var(--text);
-
-}
-
-
-/* =====================================================
-   SERVICES
-===================================================== */
-
-.service-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(300px,1fr));
-
-    gap:30px;
-
-}
-
-
-.service-card{
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:25px;
-
-    border:1px solid rgba(7,29,73,.06);
-
-    box-shadow:
-
-    0 10px 30px
-
-    rgba(7,29,73,.08);
-
-    transition:.3s;
-
-    text-align:center;
-
-}
-
-
-.service-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:
-
-    0 20px 40px
-
-    rgba(7,29,73,.15);
-
-}
-
-
-.icon-box{
-
-    width:90px;
-
-    height:90px;
-
-    margin:auto;
-
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary) 0%,
-            var(--secondary) 65%,
-            var(--gold-dark) 100%
-        );
-
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:40px;
-    color:var(--accent-light);
-
-    margin-bottom:20px;
-}
-
-.service-card a{
-
-    display:inline-block;
-
-    margin-top:15px;
-
-    background:var(--primary);
-
-    color:white;
-
-    padding:12px 25px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-
-.service-card a:hover{
-
-    background:var(--accent);
-
-    color:var(--primary);
-
-}
-
-
-/* =====================================================
-   STATS
-===================================================== */
-
-.stats-section{
-
-    background:
-
-    linear-gradient(
-
-        135deg,
-
-        var(--primary),
-
-        var(--primary-light)
-
-    );
-
-    padding:80px 20px;
-
-}
-
-
-.stats-container{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
-
-}
-
-
-.stat-box{
-
-    background:
-
-    rgba(255,255,255,.08);
-
-    backdrop-filter:blur(12px);
-
-    padding:30px;
-
-    border-radius:20px;
-
-    border:1px solid rgba(255,255,255,.12);
-
-    text-align:center;
-
-    color:white;
-
-}
-
-
-.stat-box h3{
-
-    font-size:50px;
-
-    color:var(--accent-light);
-
-}
-
-
-/* =====================================================
-   PLACEHOLDER
-===================================================== */
-
-.placeholder-box{
-
-    background:white;
-
-    padding:60px;
-
-    border-radius:20px;
-
-    box-shadow:
-
-    0 10px 30px
-
-    rgba(7,29,73,.08);
-
-    text-align:center;
-
-}
-
-/* =====================================================
-   ABOUT PGMI
-===================================================== */
-
-.about-section{
-
-    padding:90px 20px;
-
-    background:#F8FAFD;
-
-}
-
-.about-card{
-
-    max-width:1100px;
-
-    margin:auto;
-
-    background:#fff;
-
-    padding:55px;
-
-    border-radius:25px;
-
-    box-shadow:
-        0 15px 40px rgba(7,29,73,.08);
-
-    border:1px solid rgba(7,29,73,.06);
-
-}
-
-.about-card h2{
-
-    font-size:42px;
-
-    color:var(--primary);
-
-    text-align:center;
-
-    margin-bottom:25px;
-
-    font-weight:700;
-
-}
-
-.about-card p{
-
-    font-size:18px;
-
-    line-height:2;
-
-    color:var(--text);
-
-    text-align:justify;
-
-}
-
-.about-card strong{
-
-    color:var(--primary);
-
-}
-
-@media(max-width:768px){
-
-    .about-card{
-
-        padding:30px;
-
-    }
-
-    .about-card h2{
-
-        font-size:30px;
-
-    }
-
-    .about-card p{
-
-        font-size:16px;
-
-        line-height:1.8;
-
-    }
-
-}
-
-    /* =====================================================
-   POSTER PGMI
-===================================================== */
-
-.poster-section{
-    padding:20px 20px 80px;
-    background:#F8FAFD;
-}
-
-.poster-container{
-    max-width:1000px;
-    margin:auto;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.poster-pgmi{
-    width:100%;
-    max-width:900px;
-    height:auto;
-
-    display:block;
-
-    border-radius:20px;
-
-    box-shadow:
-        0 15px 40px rgba(7,29,73,.15);
-
-    transition:.3s ease;
-}
-
-.poster-pgmi:hover{
-    transform:translateY(-5px);
-
-    box-shadow:
-        0 20px 45px rgba(7,29,73,.22);
-}
-
-
-/* =====================================================
-   MEDIA PDF
-===================================================== */
-
-.media-grid{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-}
-
-
-.media-pdf-card{
-
-    background:#fff;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    border:1px solid rgba(7,29,73,.08);
-
-    box-shadow:
-        0 10px 30px rgba(7,29,73,.08);
-
-    transition:.3s ease;
-
-}
-
-
-.media-pdf-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:
-        0 20px 40px rgba(7,29,73,.16);
-
-}
-
-
-/* COVER PDF */
-
-.pdf-cover{
-
-    position:relative;
-
-    width:100%;
-
-    height:380px;
-
-    background:#eef2f7;
-
-    overflow:hidden;
-
-}
-
-
-.pdf-cover iframe{
-
-    width:100%;
-
-    height:100%;
-
-    border:none;
-
-    pointer-events:none;
-
-}
-
-
-/* LAPISAN AGAR COVER TIDAK BISA DI-SCROLL */
-
-.pdf-cover-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    cursor:pointer;
-
-}
-
-
-/* ICON PDF */
-
-.pdf-icon{
-
-    position:absolute;
-
-    top:15px;
-
-    right:15px;
-
-    background:#071D49;
-
-    color:#FFD84D;
-
-    width:45px;
-
-    height:45px;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:22px;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,.25);
-
-    z-index:2;
-
-}
-
-
-/* CONTENT */
-
-.media-pdf-content{
-
-    padding:22px;
-
-}
-
-
-.media-pdf-content h3{
-
-    color:var(--primary);
-
-    font-size:20px;
-
-    font-weight:700;
-
-    margin-bottom:10px;
-
-}
-
-
-.media-pdf-content p{
-
-    color:var(--text);
-
-    font-size:14px;
-
-    line-height:1.7;
-
-    margin-bottom:12px;
-
-}
-
-
-/* KATEGORI */
-
-.media-category{
-
-    display:inline-block;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--secondary)
-        );
-
-    color:#fff;
-
-    padding:6px 12px;
-
-    border-radius:20px;
-
-    font-size:12px;
-
-    margin-bottom:15px;
-
-}
-
-
-/* BUTTON */
-
-.media-pdf-btn{
-
-    display:block;
-
-    width:100%;
-
-    text-align:center;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--primary),
-            var(--secondary)
-        );
-
-    color:#fff;
-
-    padding:12px 18px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-
-.media-pdf-btn:hover{
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--accent),
-            var(--accent-light)
-        );
-
-    color:var(--primary);
-
-}
-/* =====================================================
-   BERITA
-===================================================== */
-
-.berita-card{
-
-    background:#fff;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    box-shadow:
-
-    0 10px 25px
-
-    rgba(7,29,73,.08);
-
-    margin-bottom:35px;
-
-    border:1px solid rgba(7,29,73,.06);
-
-    transition:.3s;
-
-}
-
-
-.berita-card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:
-
-    0 18px 35px
-
-    rgba(7,29,73,.15);
-
-}
-
-
-.berita-img{
-
-    width:100%;
-
-    height:auto;
-
-    display:block;
-
-}
-
-
-.berita-content{
-
-    padding:20px;
-
-}
-
-
-.berita-content h4{
-
-    font-size:24px;
-
-    color:var(--primary);
-
-    margin-bottom:10px;
-
-}
-
-
-.berita-content p{
-
-    color:var(--text);
-
-    line-height:1.7;
-
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-footer{
-
-    background:
-
-    linear-gradient(
-
-        135deg,
-
-        #04142F,
-
-        var(--primary)
-
-    );
-
-    color:white;
-
-    text-align:center;
-
-    padding:50px 20px;
-
-}
-
-
-footer h3{
-
-    color:var(--accent-light);
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media(max-width:768px){
-
-    .hero h1{
-
-        font-size:42px;
-
-        letter-spacing:-1px;
-
-    }
-
-
-    .hero-text{
-
-        font-size:18px;
-
-    }
-
-
-    .hero-campus{
-
-        font-size:15px;
-
-    }
-
-
-    .nav-menu{
-
-        display:none;
-
-    }
-
-
-    .hero-logo{
-
-        width:100px;
-
-    }
-
-
-    .admin-area{
-
-        gap:5px;
-
-    }
-
-
-    .admin-btn{
-
-        padding:8px 10px;
-
-        font-size:11px;
-
-    }
-
-
-    .section-title h2{
-
-        font-size:32px;
-
-    }
-
-}
-
-    
-/* =========================================
-   MODERN PROFILE - MENGENAL PGMI EDUCENTER
-========================================= */
-
-#profil-pgmi {
-    max-width: 100%;
-    padding: 90px 20px;
-    background:
-        radial-gradient(circle at top left, rgba(212,175,55,.12), transparent 35%),
-        linear-gradient(135deg, #F2F6FC, #E8EFF9);
-}
-
-#profil-pgmi .section-title {
-    max-width: 1100px;
-    margin: 0 auto 40px;
-}
-
-#profil-pgmi .section-title h2 {
-    font-size: 38px;
-    font-weight: 800;
-    color: #071D49;
-    letter-spacing: -.8px;
-}
-
-#profil-pgmi .section-title p {
-    margin-top: 12px;
-    font-size: 16px;
-    color: #64748B;
-}
-
-/* Kartu utama */
-
-#profil-pgmi .about-card {
-    position: relative;
-    max-width: 1100px;
-    padding: 55px;
-    overflow: hidden;
-
-    background:
-        linear-gradient(145deg, #FFFFFF 0%, #F7FAFF 100%);
-
-    border: 1px solid rgba(212,175,55,.35);
-    border-radius: 28px;
-
-    box-shadow:
-        0 20px 50px rgba(7,29,73,.10),
-        0 5px 15px rgba(7,29,73,.04);
-}
-
-/* Aksen emas di bagian atas */
-
-#profil-pgmi .about-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 7px;
-
-    background: linear-gradient(
-        90deg,
-        #071D49,
-        #174A91,
-        #D4AF37,
-        #F5D77A
-    );
-}
-
-/* Dekorasi cahaya */
-
-#profil-pgmi .about-card::after {
-    content: "";
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    right: -100px;
-    bottom: -110px;
-
-    background: radial-gradient(
-        circle,
-        rgba(212,175,55,.15),
-        transparent 70%
-    );
-
-    pointer-events: none;
-}
-
-#profil-pgmi .about-card h2 {
-    color: #071D49;
-    text-align: left;
-    font-size: 34px;
-    font-weight: 800;
-    margin-bottom: 25px;
-}
-
-#profil-pgmi .about-card p {
-    color: #526078;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: justify;
-    margin-bottom: 18px;
-}
-
-/* Subjudul layanan */
-
-#profil-pgmi .about-card h3 {
-    position: relative;
-    color: #071D49;
-    font-size: 21px;
-    font-weight: 700;
-
-    margin-top: 32px;
-    margin-bottom: 14px;
-    padding: 12px 16px 12px 20px;
-
-    background: linear-gradient(
-        90deg,
-        rgba(212,175,55,.18),
-        rgba(212,175,55,.03)
-    );
-
-    border-left: 5px solid #D4AF37;
-    border-radius: 0 12px 12px 0;
-}
-
-/* Link */
-
-#profil-pgmi .about-card a {
-    display: inline-block;
-    color: #174A91;
-    font-weight: 700;
-    text-decoration: none;
-
-    padding: 9px 15px;
-    margin-top: 3px;
-
-    background: #EDF3FC;
-    border: 1px solid #D8E4F5;
-    border-radius: 10px;
-
-    transition: .3s ease;
-}
-
-#profil-pgmi .about-card a:hover {
-    color: #071D49;
-    background: linear-gradient(
-        135deg,
-        #F5D77A,
-        #D4AF37
-    );
-
-    border-color: #D4AF37;
-    transform: translateY(-3px);
-    box-shadow: 0 7px 18px rgba(7,29,73,.12);
-}
-
-/* Tampilan HP */
-
-@media(max-width:768px) {
-
-    #profil-pgmi {
-        padding: 60px 15px;
-    }
-
-    #profil-pgmi .section-title h2 {
-        font-size: 28px;
-    }
-
-    #profil-pgmi .about-card {
-        padding: 35px 22px;
-        border-radius: 20px;
-    }
-
-    #profil-pgmi .about-card h2 {
-        font-size: 27px;
-    }
-
-    #profil-pgmi .about-card h3 {
-        font-size: 18px;
-    }
-
-    #profil-pgmi .about-card p {
-        font-size: 15px;
-        line-height: 1.8;
-        text-align: left;
-    }
-
-}
-
-</style>
-
-
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
+<style>
+:root{
+  --blue:#0B2F8A;
+  --blue2:#1556C8;
+  --navy:#0A2472;
+  --gold:#FFC81E;
+  --gold2:#FFD84D;
+  --text:#475569;
+  --bg:#F3F7FD;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:#172033;overflow-x:hidden}
+
+/* ===== BAR TEKS BERJALAN (emas) ===== */
+.topbar{
+  background:linear-gradient(90deg,#F4B800,#FFD84D 50%,#F4B800);
+  color:var(--navy);font-size:12px;font-weight:700;text-transform:uppercase;
+  overflow:hidden;white-space:nowrap;height:30px;line-height:30px;
+  position:fixed;top:0;left:0;width:100%;z-index:1001;
+}
+.topbar span{display:inline-block;padding-left:100%;animation:run 30s linear infinite}
+@keyframes run{to{transform:translateX(-100%)}}
+
+/* ===== NAVBAR (biru) ===== */
+.navbar{
+  position:fixed;top:30px;left:0;width:100%;z-index:1000;height:42px;
+  background:linear-gradient(90deg,var(--blue),var(--blue2));
+  border-bottom:2px solid var(--gold);
+  display:flex;align-items:center;justify-content:space-between;padding:0 24px;
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{height:30px}
+.brand b{color:var(--gold2);font-size:14px;font-weight:700}
+.menu{display:flex;gap:18px;list-style:none;align-items:center}
+.menu a{color:#fff;text-decoration:none;font-size:13px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.25s}
+.menu a:hover,.menu a.active{color:var(--gold2);border-color:var(--gold2)}
+.menu a.pill{background:var(--gold);color:var(--navy);border:none;border-radius:20px;padding:4px 12px;font-weight:700;font-size:12px}
+.menu a.pill:hover{background:#fff;color:var(--navy)}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative;min-height:100vh;padding:72px 20px 60px;
+  display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:-20px;
+  background:url("https://i.imgur.com/6JamZoo.jpeg") center/cover no-repeat;
+  filter:blur(7px) brightness(1.08) saturate(.9);
+}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(150,195,245,.35),rgba(255,255,255,.35))}
+.hero-in{position:relative;z-index:2;max-width:900px}
+.hero-logo{width:90px;margin-bottom:6px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.25))}
+.hero h1{
+  font-size:clamp(44px,8vw,84px);font-weight:900;font-style:italic;text-transform:uppercase;
+  color:var(--navy);letter-spacing:-2px;line-height:1.05;margin-bottom:14px;
+  text-shadow:0 0 3px var(--gold),0 0 10px rgba(255,200,30,.7),0 4px 10px rgba(0,0,0,.2);
+}
+.pill-navy{
+  display:inline-block;background:linear-gradient(90deg,var(--navy),#123F9A);color:#fff;
+  font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-size:clamp(12px,2vw,17px);
+  padding:9px 30px;border-radius:40px;border:2px solid var(--blue2);box-shadow:0 5px 14px rgba(10,36,114,.3);
+}
+.sub{color:var(--navy);font-weight:600;text-transform:uppercase;letter-spacing:.5px;font-size:clamp(12px,1.8vw,16px);margin:16px 0}
+.pill-gold{
+  display:inline-block;background:linear-gradient(90deg,#F4B800,var(--gold2));color:var(--navy);
+  font-weight:800;text-transform:uppercase;font-size:clamp(14px,2.4vw,22px);
+  padding:8px 34px;border-radius:40px;box-shadow:0 5px 14px rgba(0,0,0,.2);
+}
+.univ{color:var(--navy);font-weight:800;text-transform:uppercase;font-size:clamp(12px,2.1vw,20px);margin:16px 0 22px;
+  text-shadow:0 0 6px rgba(255,255,255,.9)}
+.btn-start{
+  display:inline-block;background:linear-gradient(180deg,var(--gold2),#F4B800);color:var(--navy);
+  font-weight:700;text-decoration:none;font-size:14px;padding:11px 34px;border-radius:40px;
+  border:2px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.25);transition:.3s;
+}
+.btn-start:hover{transform:translateY(-4px);box-shadow:0 10px 22px rgba(0,0,0,.35)}
+
+/* ===== SECTION ===== */
+.section{padding:80px 20px;max-width:1250px;margin:auto}
+.stitle{text-align:center;margin-bottom:44px}
+.stitle h2{display:inline-block;font-size:clamp(24px,4vw,36px);font-weight:800;color:var(--navy);text-transform:uppercase;position:relative;padding-bottom:12px}
+.stitle h2::after{content:"";position:absolute;left:20%;right:20%;bottom:0;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--blue2),var(--gold))}
+.stitle p{color:var(--text);margin-top:10px}
+
+.poster{padding:50px 20px 10px;text-align:center}
+.poster img{max-width:900px;width:100%;border-radius:18px;border:3px solid var(--gold);box-shadow:0 14px 36px rgba(10,36,114,.2)}
+
+/* ===== PROFIL ===== */
+.about{max-width:1050px;margin:auto;background:#fff;border-radius:24px;padding:50px;
+  border-top:6px solid var(--gold);box-shadow:0 16px 40px rgba(10,36,114,.1)}
+.about h2{color:var(--navy);font-size:30px;font-weight:800;margin-bottom:18px}
+.about p{color:var(--text);line-height:1.9;text-align:justify;margin-bottom:16px}
+.about strong{color:var(--navy)}
+.about h3{color:var(--navy);font-size:19px;margin:28px 0 12px;padding:10px 16px;border-left:5px solid var(--gold);
+  background:linear-gradient(90deg,rgba(255,200,30,.2),transparent);border-radius:0 12px 12px 0}
+.about a{display:inline-block;background:var(--navy);color:#fff;font-weight:600;font-size:14px;text-decoration:none;padding:9px 18px;border-radius:30px;transition:.3s}
+.about a:hover{background:var(--gold);color:var(--navy)}
+
+/* ===== LAYANAN ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
+.card{background:#fff;border-radius:22px;padding:34px 28px;text-align:center;border-bottom:4px solid var(--gold);
+  box-shadow:0 10px 28px rgba(10,36,114,.09);transition:.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 38px rgba(10,36,114,.18)}
+.icon{width:80px;height:80px;margin:0 auto 18px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:36px;color:var(--gold2);background:linear-gradient(135deg,var(--blue),var(--blue2))}
+.card h3{color:var(--navy);margin-bottom:8px}
+.card p{color:var(--text);font-size:14px}
+.card a{display:inline-block;margin-top:16px;background:linear-gradient(180deg,var(--gold2),#F4B800);color:var(--navy);font-weight:700;
+  text-decoration:none;padding:10px 26px;border-radius:30px;font-size:14px;transition:.3s}
+.card a:hover{background:var(--navy);color:#fff}
+
+/* ===== MEDIA ===== */
+.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.media-pdf-card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid rgba(10,36,114,.08);box-shadow:0 10px 28px rgba(10,36,114,.09);transition:.3s}
+.media-pdf-card:hover{transform:translateY(-8px);box-shadow:0 18px 38px rgba(10,36,114,.18)}
+.pdf-cover{position:relative;height:360px;background:#eef2f7;overflow:hidden}
+.pdf-cover iframe{width:100%;height:100%;border:none;pointer-events:none}
+.pdf-cover-overlay{position:absolute;inset:0;cursor:pointer}
+.pdf-icon{position:absolute;top:14px;right:14px;z-index:2;width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold2);
+  display:flex;align-items:center;justify-content:center;font-size:21px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.media-pdf-content{padding:22px}
+.media-pdf-content h3{color:var(--navy);font-size:19px;margin-bottom:8px}
+.media-pdf-content p{color:var(--text);font-size:14px;line-height:1.7;margin-bottom:12px}
+.media-category{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:5px 12px;border-radius:20px;font-size:12px;margin-bottom:14px}
+.media-pdf-btn{display:block;text-align:center;background:linear-gradient(90deg,var(--blue),var(--blue2));color:#fff;padding:11px;border-radius:30px;text-decoration:none;font-weight:600;transition:.3s}
+.media-pdf-btn:hover{background:var(--gold);color:var(--navy)}
+.placeholder-box{background:#fff;padding:50px;border-radius:20px;text-align:center;box-shadow:0 10px 28px rgba(10,36,114,.08);grid-column:1/-1}
+
+/* ===== BERITA ===== */
+.berita-card{background:#fff;border-radius:18px;overflow:hidden;margin-bottom:30px;border-left:5px solid var(--gold);
+  box-shadow:0 10px 26px rgba(10,36,114,.09);transition:.3s}
+.berita-card:hover{transform:translateY(-5px)}
+.berita-img{width:100%;height:auto;display:block}
+.berita-content{padding:22px}
+.berita-content h4{font-size:23px;color:var(--navy);margin-bottom:10px}
+.berita-content p{color:var(--text);line-height:1.7;margin-bottom:8px}
+.berita-content small{color:var(--blue2);font-weight:600}
+
+/* ===== FOOTER (biru + garis emas) ===== */
+footer{background:linear-gradient(90deg,var(--blue),var(--blue2));border-top:3px solid var(--gold);color:#fff;text-align:center;padding:34px 20px}
+footer h3{color:var(--gold2);margin-bottom:6px}
+footer p{font-size:14px}
+footer .copy{margin-top:14px;font-size:12px;opacity:.9}
+
+@media(max-width:768px){
+  .navbar{padding:0 10px}
+  .brand b{display:none}
+  .menu{gap:12px;overflow-x:auto;white-space:nowrap}
+  .menu a{font-size:12px}
+  .about{padding:30px 20px}
+  .about p{text-align:left}
+}
+</style>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://pgmieducenter.github.io/PGMI-Edu-Center/#website",
-      "url": "https://pgmieducenter.github.io/PGMI-Edu-Center/",
-      "name": "PGMI EduCenter",
-      "alternateName": "Portal Digital PGMI",
-      "description": "Portal Digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah UIN Mahmud Yunus Batusangkar.",
-      "inLanguage": "id-ID",
-      "publisher": {
-        "@id": "https://pgmieducenter.github.io/PGMI-Edu-Center/#organization"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://pgmieducenter.github.io/PGMI-Edu-Center/#organization",
-      "name": "PGMI EduCenter",
-      "url": "https://pgmieducenter.github.io/PGMI-Edu-Center/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://i.imgur.com/O5Zksfk.png"
-      },
-      "description": "Portal informasi dan layanan digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah, FTIK UIN Mahmud Yunus Batusangkar."
-    }
-  ]
-}
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://pgmieducenter.github.io/PGMI-Edu-Center/#website","url":"https://pgmieducenter.github.io/PGMI-Edu-Center/","name":"PGMI EduCenter","alternateName":"Portal Digital PGMI","description":"Portal Digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah UIN Mahmud Yunus Batusangkar.","inLanguage":"id-ID","publisher":{"@id":"https://pgmieducenter.github.io/PGMI-Edu-Center/#organization"}},
+{"@type":"Organization","@id":"https://pgmieducenter.github.io/PGMI-Edu-Center/#organization","name":"PGMI EduCenter","url":"https://pgmieducenter.github.io/PGMI-Edu-Center/","logo":{"@type":"ImageObject","url":"https://i.imgur.com/O5Zksfk.png"},"description":"Portal informasi dan layanan digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah, FTIK UIN Mahmud Yunus Batusangkar."}
+]}
 </script>
-
-<!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
-<meta name="google-site-verification"
-content="dsb0yb_Zb4_gjAI1Fkobfk87SrmyVQ3EGztbgdDqgRM" />
-   
 </head>
 
 <body>
 
-<!-- ===================== NAVBAR ===================== -->
+<!-- BAR TEKS BERJALAN -->
+<div class="topbar"><span>Selamat Datang di PGMI EduCenter — Portal Digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah — Fakultas Tarbiyah dan Ilmu Keguruan — UIN Mahmud Yunus Batusangkar</span></div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
-
-    <div class="nav-container">
-
-        <!-- LOGO -->
-        <div class="logo-area">
-
-            <img src="https://i.imgur.com/O5Zksfk.png" class="logo" alt="Logo PGMI EduCenter">
-
-            <div>
-                <div class="logo-title">
-                    PGMI EduCenter
-                </div>
-
-                <div class="logo-sub">
-                    Portal Digital PGMI
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- MENU -->
-        <ul class="nav-menu">
-
-            <li>
-                <a href="#home">
-                    Beranda
-                </a>
-            </li>
-
-            <li>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0amVRwzfSipmKi2Ioh6zMm3sZ6pgW4yqj_giQocwovwACew/viewform"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Validasi Modul
-                </a>
-            </li>
-
-            <li>
-                <a href="#media">
-                    Bank Media
-                </a>
-            </li>
-
-            <li>
-                <a href="#berita">
-                    Berita
-                </a>
-            </li>
-
-        </ul>
-
-
-
-        <!-- ADMIN BUTTON AREA -->
-        <div class="admin-area">
-
-
-            <a href="https://script.google.com/a/macros/uinmybatusangkar.ac.id/s/AKfycbwu7ceIT20pg6XaZGLX4Yww1Y_j03fihmtmvEMkfFOoQSN-OICKCucwxI3Cm3x4V4kB/exec"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="admin-btn">
-
-                <i class="bi bi-shield-lock"></i>
-                Admin Validator
-
-            </a>
-
-
-
-            <a href="https://script.google.com/a/macros/uinmybatusangkar.ac.id/s/AKfycbxXkwnDQfBDVQhCbu7ias5EUCeT09V-oCmP94oCMXwx7xTkPZV_XvQD4wPdRHY0mVFD/exec"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="admin-btn">
-
-                <i class="bi bi-cloud-upload"></i>
-                Upload Berita & Media
-
-            </a>
-
-
-        </div>
-
-
-    </div>
-
+  <a class="brand" href="#home">
+    <img src="https://i.imgur.com/O5Zksfk.png" alt="Logo PGMI EduCenter">
+    <b>PGMI EduCenter</b>
+  </a>
+  <ul class="menu">
+    <li><a href="#home" class="active">Beranda</a></li>
+    <li><a href="#profil-pgmi">Tentang</a></li>
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#media">Bank Media</a></li>
+    <li><a href="#berita">Berita</a></li>
+    <li><a class="pill" target="_blank" rel="noopener noreferrer" href="https://script.google.com/a/macros/uinmybatusangkar.ac.id/s/AKfycbwu7ceIT20pg6XaZGLX4Yww1Y_j03fihmtmvEMkfFOoQSN-OICKCucwxI3Cm3x4V4kB/exec"><i class="bi bi-shield-lock"></i> Admin Validator</a></li>
+    <li><a class="pill" target="_blank" rel="noopener noreferrer" href="https://script.google.com/a/macros/uinmybatusangkar.ac.id/s/AKfycbxXkwnDQfBDVQhCbu7ias5EUCeT09V-oCmP94oCMXwx7xTkPZV_XvQD4wPdRHY0mVFD/exec"><i class="bi bi-cloud-upload"></i> Upload Berita & Media</a></li>
+  </ul>
 </nav>
 
-
-
-<!-- ===================== HERO ===================== -->
-
+<!-- HERO -->
 <section id="home" class="hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <img
-        src="https://i.imgur.com/O5Zksfk.png"
-        class="hero-logo"
-        alt="Logo PGMI EduCenter">
-
-        <h1>
-            PGMI EduCenter
-        </h1>
-
-        <p class="hero-text">
-
-            Portal Digital Program Studi
-            Pendidikan Guru Madrasah Ibtidaiyah
-
-        </p>
-
-        <p class="hero-campus">
-
-            Fakultas Tarbiyah dan Ilmu Keguruan
-            <br>
-            UIN Mahmud Yunus Batusangkar
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0amVRwzfSipmKi2Ioh6zMm3sZ6pgW4yqj_giQocwovwACew/viewform"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn-primary-custom">
-
-                <i class="bi bi-journal-check"></i>
-                Validasi Modul
-
-            </a>
-
-            <a href="#media"
-               class="btn-secondary-custom">
-
-                <i class="bi bi-collection-play"></i>
-                Bank Media
-
-            </a>
-
-        </div>
-
-    </div>
-
+  <div class="hero-in">
+    <img class="hero-logo" src="https://i.imgur.com/O5Zksfk.png" alt="Logo PGMI EduCenter">
+    <h1>PGMI EduCenter</h1>
+    <div class="pill-navy">Portal Digital Program Studi PGMI</div>
+    <p class="sub">Validasi Modul • Bank Media • Berita Kegiatan</p>
+    <div class="pill-gold">Fakultas Tarbiyah dan Ilmu Keguruan</div>
+    <p class="univ">Universitas Islam Negeri Mahmud Yunus Batusangkar</p>
+    <a href="#layanan" class="btn-start">Mulai Layanan →</a>
+  </div>
 </section>
 
-<!-- ===================== RUNNING TEXT ===================== -->
-
-<div class="marquee-container">
-
-    <div class="marquee">
-
-        📢 Selamat Datang di PGMI EduCenter —
-        Portal Digital Program Studi Pendidikan Guru Madrasah Ibtidaiyah —
-        Fakultas Tarbiyah dan Ilmu Keguruan —
-        UIN Mahmud Yunus Batusangkar
-
-    </div>
-
-</div>
-
-
-<!-- POSTER PGMI -->
-<section class="poster-section">
-
-    <div class="poster-container">
-
-        <img
-            src="https://i.imgur.com/BSYclsf.jpeg"
-            alt="Alur Proses Validasi Modul Ajar PGMI EDUCENTER"
-            class="poster-pgmi"
-        >
-
-    </div>
-
+<!-- POSTER -->
+<section class="poster">
+  <img src="https://i.imgur.com/BSYclsf.jpeg" alt="Alur Proses Validasi Modul Ajar PGMI EDUCENTER">
 </section>
 
-
-<!-- ================================
-     PROFIL DAN INFORMASI PGMI
-================================ -->
-
+<!-- PROFIL -->
 <section class="section" id="profil-pgmi">
+  <div class="stitle">
+    <h2>Program Studi PGMI</h2>
+    <p>Fakultas Tarbiyah dan Ilmu Keguruan UIN Mahmud Yunus Batusangkar</p>
+  </div>
+  <div class="about">
+    <h2>Mengenal PGMI EduCenter</h2>
+    <p><strong>PGMI EduCenter</strong> merupakan portal digital yang menyediakan informasi dan layanan untuk mendukung kegiatan Program Studi Pendidikan Guru Madrasah Ibtidaiyah (PGMI), Fakultas Tarbiyah dan Ilmu Keguruan, UIN Mahmud Yunus Batusangkar.</p>
+    <p>Portal ini dikembangkan sebagai sarana pemanfaatan teknologi informasi dalam mendukung akses informasi akademik, pengembangan media pembelajaran, serta pengelolaan layanan digital di lingkungan Program Studi PGMI.</p>
+    <p>Melalui PGMI EduCenter, pengguna dapat mengakses layanan validasi modul ajar, bank media pembelajaran, publikasi berita, informasi akademik, serta berbagai layanan administrasi berbasis teknologi.</p>
 
-    <div class="section-title">
+    <h3>Layanan Validasi Modul Ajar</h3>
+    <p>PGMI EduCenter menyediakan layanan validasi dan review modul ajar untuk mendukung proses pemeriksaan serta evaluasi perangkat pembelajaran. Layanan ini menjadi salah satu bentuk pemanfaatan teknologi digital dalam pengelolaan kegiatan akademik.</p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSe0amVRwzfSipmKi2Ioh6zMm3sZ6pgW4yqj_giQocwovwACew/viewform" target="_blank" rel="noopener noreferrer">Akses Formulir Validasi Modul Ajar</a></p>
 
-        <h2>Program Studi Pendidikan Guru Madrasah Ibtidaiyah</h2>
+    <h3>Bank Media Pembelajaran PGMI</h3>
+    <p>Bank Media Pembelajaran merupakan bagian dari PGMI EduCenter yang menyediakan kumpulan media pembelajaran digital. Pengguna dapat mengakses materi pembelajaran yang telah dipublikasikan melalui portal ini.</p>
+    <p><a href="#media">Lihat Bank Media Pembelajaran PGMI</a></p>
 
-        <p>
-            Fakultas Tarbiyah dan Ilmu Keguruan
-            UIN Mahmud Yunus Batusangkar
-        </p>
-
-    </div>
-
-    <div class="about-card">
-
-        <h2>Mengenal PGMI EduCenter</h2>
-
-        <p>
-            <strong>PGMI EduCenter</strong> merupakan portal digital yang
-            menyediakan informasi dan layanan untuk mendukung
-            kegiatan Program Studi Pendidikan Guru Madrasah
-            Ibtidaiyah (PGMI), Fakultas Tarbiyah dan Ilmu
-            Keguruan, UIN Mahmud Yunus Batusangkar.
-        </p>
-
-        <p>
-            Portal ini dikembangkan sebagai sarana pemanfaatan
-            teknologi informasi dalam mendukung akses informasi
-            akademik, pengembangan media pembelajaran, serta
-            pengelolaan layanan digital di lingkungan Program
-            Studi PGMI.
-        </p>
-
-        <p>
-            Melalui PGMI EduCenter, pengguna dapat mengakses layanan
-            validasi modul ajar, bank media pembelajaran,
-            publikasi berita, informasi akademik,
-            serta berbagai layanan administrasi berbasis teknologi.
-        </p>
-
-        <h3>Layanan Validasi Modul Ajar</h3>
-
-        <p>
-            PGMI EduCenter menyediakan layanan validasi dan
-            review modul ajar untuk mendukung proses pemeriksaan
-            serta evaluasi perangkat pembelajaran. Layanan ini
-            menjadi salah satu bentuk pemanfaatan teknologi
-            digital dalam pengelolaan kegiatan akademik.
-        </p>
-
-        <p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0amVRwzfSipmKi2Ioh6zMm3sZ6pgW4yqj_giQocwovwACew/viewform"
-               target="_blank"
-               rel="noopener noreferrer">
-                Akses Formulir Validasi Modul Ajar
-            </a>
-        </p>
-
-        <h3>Bank Media Pembelajaran PGMI</h3>
-
-        <p>
-            Bank Media Pembelajaran merupakan bagian dari
-            PGMI EduCenter yang menyediakan kumpulan media
-            pembelajaran digital. Pengguna dapat mengakses
-            materi pembelajaran yang telah dipublikasikan
-            melalui portal ini.
-        </p>
-
-        <p>
-            <a href="#media">
-                Lihat Bank Media Pembelajaran PGMI
-            </a>
-        </p>
-
-        <h3>Informasi dan Berita Kegiatan PGMI</h3>
-
-        <p>
-            PGMI EduCenter juga menyediakan informasi dan
-            publikasi kegiatan Program Studi PGMI. Bagian
-            berita digunakan untuk menyampaikan informasi
-            kegiatan akademik dan berbagai aktivitas
-            program studi.
-        </p>
-
-        <p>
-            <a href="#berita">
-                Baca Berita dan Kegiatan PGMI
-            </a>
-        </p>
-
-    </div>
-
+    <h3>Informasi dan Berita Kegiatan PGMI</h3>
+    <p>PGMI EduCenter juga menyediakan informasi dan publikasi kegiatan Program Studi PGMI. Bagian berita digunakan untuk menyampaikan informasi kegiatan akademik dan berbagai aktivitas program studi.</p>
+    <p><a href="#berita">Baca Berita dan Kegiatan PGMI</a></p>
+  </div>
 </section>
-
-<!-- AKHIR PROFIL PGMI -->
-
 
 <!-- LAYANAN -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        <h2>Layanan Utama</h2>
-
-        <p>
-            Akses layanan digital PGMI
-        </p>
-
+<section class="section" id="layanan">
+  <div class="stitle">
+    <h2>Layanan Utama</h2>
+    <p>Akses layanan digital PGMI</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="icon"><i class="bi bi-journal-check"></i></div>
+      <h3>Validasi Modul Ajar</h3>
+      <p>Sistem review dan validasi modul ajar.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0amVRwzfSipmKi2Ioh6zMm3sZ6pgW4yqj_giQocwovwACew/viewform" target="_blank" rel="noopener noreferrer">Buka Layanan</a>
     </div>
-
-    <div class="service-grid">
-
-        <div class="service-card">
-
-            <div class="icon-box">
-
-                <i class="bi bi-journal-check"></i>
-
-            </div>
-
-            <h3>Validasi Modul Ajar</h3>
-
-            <p>
-
-                Sistem review dan validasi
-                modul ajar.
-
-            </p>
-
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0amVRwzfSipmKi2Ioh6zMm3sZ6pgW4yqj_giQocwovwACew/viewform"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                Buka Layanan
-
-            </a>
-
-        </div>
-
-        <div class="service-card">
-
-            <div class="icon-box">
-
-                <i class="bi bi-collection-play"></i>
-
-            </div>
-
-            <h3>Bank Media</h3>
-
-            <p>
-
-                Kumpulan media pembelajaran
-                digital PGMI.
-
-            </p>
-
-            <a href="#media">
-
-                Lihat Media
-
-            </a>
-
-        </div>
-
-        <div class="service-card">
-
-            <div class="icon-box">
-
-                <i class="bi bi-newspaper"></i>
-
-            </div>
-
-            <h3>Berita PGMI</h3>
-
-            <p>
-
-                Informasi dan kegiatan terbaru
-                Program Studi PGMI.
-
-            </p>
-
-            <a href="#berita">
-
-                Baca Berita
-
-            </a>
-
-        </div>
-
+    <div class="card">
+      <div class="icon"><i class="bi bi-collection-play"></i></div>
+      <h3>Bank Media</h3>
+      <p>Kumpulan media pembelajaran digital PGMI.</p>
+      <a href="#media">Lihat Media</a>
     </div>
-
+    <div class="card">
+      <div class="icon"><i class="bi bi-newspaper"></i></div>
+      <h3>Berita PGMI</h3>
+      <p>Informasi dan kegiatan terbaru Program Studi PGMI.</p>
+      <a href="#berita">Baca Berita</a>
+    </div>
+  </div>
 </section>
 
-
-
 <!-- MEDIA -->
-
 <section id="media" class="section">
-
-    <div class="section-title">
-
-        <h2>Bank Media Pembelajaran</h2>
-
-        <p>Kumpulan media pembelajaran yang telah diunggah</p>
-
-    </div>
-
-    <div id="mediaContainer" class="media-grid">
-
-        Loading...
-
-    </div>
-
+  <div class="stitle">
+    <h2>Bank Media Pembelajaran</h2>
+    <p>Kumpulan media pembelajaran yang telah diunggah</p>
+  </div>
+  <div id="mediaContainer" class="media-grid">Loading...</div>
 </section>
 
 <!-- BERITA -->
-
 <section id="berita" class="section">
-
-    <div class="section-title">
-
-        <h2>Berita PGMI</h2>
-
-        <p>Informasi dan kegiatan terbaru Program Studi PGMI</p>
-
-    </div>
-
-    <div id="beritaContainer" class="berita-grid">
-
-        Loading...
-
-    </div>
-
+  <div class="stitle">
+    <h2>Berita PGMI</h2>
+    <p>Informasi dan kegiatan terbaru Program Studi PGMI</p>
+  </div>
+  <div id="beritaContainer" class="berita-grid">Loading...</div>
 </section>
 
 <!-- FOOTER -->
-
 <footer>
-
-    <h3>PGMI EduCenter</h3>
-
-    <p>
-
-        Program Studi Pendidikan Guru Madrasah Ibtidaiyah
-
-    </p>
-
-    <p>
-
-        FTIK UIN Mahmud Yunus Batusangkar
-
-    </p>
-
+  <h3>PGMI EduCenter</h3>
+  <p>Program Studi Pendidikan Guru Madrasah Ibtidaiyah</p>
+  <p>FTIK UIN Mahmud Yunus Batusangkar</p>
+  <p class="copy">© 2026 • Created with ❤️ by Adri Putra Can</p>
 </footer>
 
 <script>
-
-
 document.addEventListener("DOMContentLoaded",function(){
-
-loadMedia();
-
-loadBerita();
-
+  loadMedia();
+  loadBerita();
+  // tandai menu aktif saat scroll
+  const links=document.querySelectorAll('.menu a[href^="#"]');
+  window.addEventListener("scroll",function(){
+    let cur="#home";
+    links.forEach(a=>{
+      const s=document.querySelector(a.getAttribute("href"));
+      if(s && s.getBoundingClientRect().top<=120) cur=a.getAttribute("href");
+    });
+    links.forEach(a=>a.classList.toggle("active",a.getAttribute("href")===cur));
+  });
 });
-
 
 const API = "https://script.google.com/a/macros/uinmybatusangkar.ac.id/s/AKfycbxpsGytibaYnLfWxO5XtJC-70ppSmmZtRfbhnGdI7FYkvXB7doOpRHdjacstsc9Y9xP/exec";
 
-
-/**********************
-LOAD MEDIA PDF
-**********************/
-
-async function loadMedia() {
-
-    try {
-
-        const response =
-            await fetch(API + "?action=media");
-
-        const data =
-            await response.json();
-
-        console.log("MEDIA :", data);
-
-        let html = "";
-
-        if (!data || data.length === 0) {
-
-            html = `
-                <div class="placeholder-box">
-
-                    <i class="bi bi-file-earmark-pdf"
-                       style="font-size:50px;color:#071D49;">
-                    </i>
-
-                    <h3>Belum Ada Media</h3>
-
-                    <p>
-                        Belum ada media pembelajaran
-                        yang tersedia.
-                    </p>
-
-                </div>
-            `;
-
-        } else {
-
-            data.forEach(item => {
-
-                /*
-                 * URL PDF dari Google Drive
-                 */
-                const fileUrl =
-                    String(item.fileUrl || "").trim();
-
-
-                /*
-                 * Ambil FILE ID dari URL Google Drive
-                 */
-                let fileId = "";
-
-                const match =
-                    fileUrl.match(/[-\w]{25,}/);
-
-                if (match) {
-
-                    fileId = match[0];
-
-                }
-
-
-                /*
-                 * Google Drive Preview
-                 */
-                const previewUrl =
-                    fileId
-                    ? "https://drive.google.com/file/d/"
-                      + fileId
-                      + "/preview"
-                    : fileUrl;
-
-
-                html += `
-
-                    <div class="media-pdf-card">
-
-
-                        <!-- COVER PDF -->
-
-                        <div class="pdf-cover">
-
-                            <div class="pdf-icon">
-
-                                <i class="bi bi-file-earmark-pdf-fill"></i>
-
-                            </div>
-
-
-                            <iframe
-                                src="${previewUrl}"
-                                loading="lazy">
-                            </iframe>
-
-
-                            <!-- Overlay -->
-
-                            <a
-                                href="${fileUrl}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="pdf-cover-overlay"
-                                aria-label="Buka PDF">
-                            </a>
-
-                        </div>
-
-
-                        <!-- CONTENT -->
-
-                        <div class="media-pdf-content">
-
-
-                            <h3>
-                                ${item.judul || "Media Pembelajaran"}
-                            </h3>
-
-
-                            <p>
-
-                                ${item.deskripsi || ""}
-
-                            </p>
-
-
-                            ${
-                                item.kategori
-                                ?
-                                `
-                                <span class="media-category">
-
-                                    <i class="bi bi-tag"></i>
-
-                                    ${item.kategori}
-
-                                </span>
-                                `
-                                :
-                                ""
-                            }
-
-
-                            <a
-                                href="${fileUrl}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="media-pdf-btn">
-
-                                <i class="bi bi-book"></i>
-
-                                Baca PDF
-
-                            </a>
-
-
-                        </div>
-
-                    </div>
-
-                `;
-
-            });
-
-        }
-
-
-        document.getElementById(
-            "mediaContainer"
-        ).innerHTML = html;
-
-
-    } catch (err) {
-
-        console.error(
-            "Gagal mengambil media:",
-            err
-        );
-
-
-        document.getElementById(
-            "mediaContainer"
-        ).innerHTML = `
-
-            <div class="placeholder-box">
-
-                <i class="bi bi-exclamation-triangle"
-                   style="font-size:45px;color:#B89020;">
-                </i>
-
-                <h3>
-                    Gagal Mengambil Data Media
-                </h3>
-
-                <p>
-                    Silakan coba lagi beberapa saat.
-                </p>
-
+/********** LOAD MEDIA PDF **********/
+async function loadMedia(){
+  const box=document.getElementById("mediaContainer");
+  try{
+    const response=await fetch(API+"?action=media");
+    const data=await response.json();
+    let html="";
+    if(!data || data.length===0){
+      html=`<div class="placeholder-box"><i class="bi bi-file-earmark-pdf" style="font-size:50px;color:#0A2472;"></i><h3>Belum Ada Media</h3><p>Belum ada media pembelajaran yang tersedia.</p></div>`;
+    }else{
+      data.forEach(item=>{
+        const fileUrl=String(item.fileUrl||"").trim();
+        let fileId="";
+        const match=fileUrl.match(/[-\w]{25,}/);
+        if(match){fileId=match[0];}
+        const previewUrl=fileId?"https://drive.google.com/file/d/"+fileId+"/preview":fileUrl;
+        html+=`
+          <div class="media-pdf-card">
+            <div class="pdf-cover">
+              <div class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></div>
+              <iframe src="${previewUrl}" loading="lazy"></iframe>
+              <a href="${fileUrl}" target="_blank" rel="noopener noreferrer" class="pdf-cover-overlay" aria-label="Buka PDF"></a>
             </div>
-
-        `;
-
+            <div class="media-pdf-content">
+              <h3>${item.judul||"Media Pembelajaran"}</h3>
+              <p>${item.deskripsi||""}</p>
+              ${item.kategori?`<span class="media-category"><i class="bi bi-tag"></i> ${item.kategori}</span>`:""}
+              <a href="${fileUrl}" target="_blank" rel="noopener noreferrer" class="media-pdf-btn"><i class="bi bi-book"></i> Baca PDF</a>
+            </div>
+          </div>`;
+      });
     }
-
-}
-/**********************
-LOAD BERITA
-**********************/
-
-async function loadBerita() {
-
-    try {
-
-        const response = await fetch(API + "?action=berita");
-        const data = await response.json();
-
-        console.log("BERITA :", data);
-
-        let html = "";
-
-        if (!data || data.length === 0) {
-
-            html = "<p>Belum ada berita.</p>";
-
-        } else {
-
-            data.forEach(item => {
-
-                html += `
-
-                <div class="berita-card">
-
-                    ${item.gambarUrl
-                        ? `<img src="${item.gambarUrl}"
-                               class="berita-img"
-                               alt="${item.judul}"
-                               onerror="this.style.display='none'">`
-                        : ""}
-
-                    <div class="berita-content">
-
-                        <h4>${item.judul}</h4>
-
-                        <p>${item.isi}</p>
-
-                        <small>
-                            <i class="bi bi-calendar-event"></i>
-                            ${item.tanggal}
-                        </small>
-
-                    </div>
-
-                </div>
-
-                `;
-
-            });
-
-        }
-
-        document.getElementById("beritaContainer").innerHTML = html;
-
-    } catch (err) {
-
-        console.error(err);
-
-        document.getElementById("beritaContainer").innerHTML =
-            "<p>Gagal mengambil berita.</p>";
-
-    }
-
+    box.innerHTML=html;
+  }catch(err){
+    console.error("Gagal mengambil media:",err);
+    box.innerHTML=`<div class="placeholder-box"><i class="bi bi-exclamation-triangle" style="font-size:45px;color:#B89020;"></i><h3>Gagal Mengambil Data Media</h3><p>Silakan coba lagi beberapa saat.</p></div>`;
+  }
 }
 
-
-
+/********** LOAD BERITA **********/
+async function loadBerita(){
+  const box=document.getElementById("beritaContainer");
+  try{
+    const response=await fetch(API+"?action=berita");
+    const data=await response.json();
+    let html="";
+    if(!data || data.length===0){
+      html="<p>Belum ada berita.</p>";
+    }else{
+      data.forEach(item=>{
+        html+=`
+          <div class="berita-card">
+            ${item.gambarUrl?`<img src="${item.gambarUrl}" class="berita-img" alt="${item.judul}" onerror="this.style.display='none'">`:""}
+            <div class="berita-content">
+              <h4>${item.judul}</h4>
+              <p>${item.isi}</p>
+              <small><i class="bi bi-calendar-event"></i> ${item.tanggal}</small>
+            </div>
+          </div>`;
+      });
+    }
+    box.innerHTML=html;
+  }catch(err){
+    console.error(err);
+    box.innerHTML="<p>Gagal mengambil berita.</p>";
+  }
+}
 </script>
 
 </body>
